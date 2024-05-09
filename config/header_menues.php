@@ -4,15 +4,15 @@ return $header_menus = [
     'categories' => [
         [
             'title' => 'Donna',
-            'link' => '#',
+            'link' => 'woman',
         ],
         [
             'title' => 'Uomo',
-            'link' => '#',
+            'link' => 'man',
         ],
         [
             'title' => 'Bambini',
-            'link' => '#',
+            'link' => 'children',
         ]
     ],
     'icons_menu' => [

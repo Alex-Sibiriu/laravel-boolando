@@ -9,17 +9,19 @@
 <header>
     <div class="container d-flex">
         <nav class="categories">
-        <ul class="d-flex">
+        <ul class="d-flex m-0 h-100">
             @foreach ($categories as $category)
-                <li>
-                    <a :href="{{ $category['link'] }}">{{ $category['title'] }}</a>
+                <li class="d-flex align-items-center {{ Route::currentRouteName() === $category['link'] ? 'current-page' : '' }}">
+                    <a class="px-2" href="{{ route($category['link']) }}">{{ $category['title'] }}</a>
                 </li>
             @endforeach
         </ul>
         </nav>
 
-        <div>
-        <img src="{{ Vite::asset('resources/img/boolean-logo.png')}}" alt="logo">
+        <div class=" d-flex align-items-center ">
+            <a href="{{ route('home') }}">
+                <img src="{{ Vite::asset('resources/img/boolean-logo.png')}}" alt="logo">
+            </a>
         </div>
 
         <nav class="profile">

@@ -8,6 +8,7 @@
 /* GENERAL */
 body {
   font-family: Helvetica, sans-serif;
+  min-height: 100vh;
 }
 
 ul {
@@ -21,9 +22,7 @@ li {
 a {
   text-decoration: none;
   color: white;
-  &:hover {
-    text-decoration: underline;
-  }
+  cursor: pointer;
 }
 
 h3 {
@@ -38,4 +37,5 @@ h4 {
 
 main {
     padding-top: 123px;
+    padding-bottom: $footer-h;
   }

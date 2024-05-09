@@ -6,7 +6,7 @@
 
 @endphp
 
-<footer>
+<footer class=" position-absolute w-100 bottom-0 ">
     <!-- INFO SECTION -->
     <div class="container d-flex">
       <!-- INFO SECTION -->

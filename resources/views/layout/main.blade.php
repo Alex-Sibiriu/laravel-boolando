@@ -12,7 +12,7 @@
 
     <title>Laravel Boolando</title>
 </head>
-<body>
+<body class=" position-relative ">
 
   @include('partials.header')
 

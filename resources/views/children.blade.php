@@ -23,6 +23,15 @@
         }
     }
 
+    function check_products($products) {
+        foreach ($products as $product) {
+            if ($product['category'] === Route::currentRouteName() ) {
+                return true;
+            }
+        }
+        return false;
+    }
+
 @endphp
 
 @extends('layout.main')
@@ -34,6 +43,7 @@
     <div class="row row-cols-3">
 
         @foreach ($products as $product)
+        @if ($product['category'] === 'children')
 
         <div class="col mb-3">
             <div class="card h-100 border-0">
@@ -74,7 +84,12 @@
                 {{-- <!-- /Card Bottom --> --}}
             </div>
         </div>
+        @endif
         @endforeach
+
+        @if (!check_products($products))
+            <h2 class="pt-5 w-100">Non ci sono prodotti disponibili per questa categoria</h2>
+        @endif
     </div>
 
   </div>

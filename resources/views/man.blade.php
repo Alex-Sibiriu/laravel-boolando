@@ -23,6 +23,15 @@
         }
     }
 
+    function check_products() {
+        foreach ($products as $product) {
+            if ($product['category'] === Route::currentRouteName() ) {
+                return true;
+            }
+        }
+        return false;
+    }
+
 @endphp
 
 @extends('layout.main')
@@ -34,6 +43,7 @@
     <div class="row row-cols-3">
 
         @foreach ($products as $product)
+        @if ($product['category'] === 'man')
 
         <div class="col mb-3">
             <div class="card h-100 border-0">
@@ -74,6 +84,7 @@
                 {{-- <!-- /Card Bottom --> --}}
             </div>
         </div>
+        @endif
         @endforeach
     </div>
 
