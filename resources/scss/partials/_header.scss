@@ -1,0 +1,39 @@
+header {
+    width: 100%;
+    height: header-h;
+    line-height: 73px;
+    font-size: 1.05rem;
+    font-weight: bold;
+    color: $primary-clr;
+    background-color: $header-clr;
+    margin-bottom: 53px;
+    box-shadow: 0px 0px 5px $secondary-clr;
+    position: fixed;
+    z-index: 10;
+    .container {
+      justify-content: space-between;
+      padding: 0 10px;
+      .categories {
+        width: 15%;
+        ul {
+          justify-content: flex-start;
+          li {
+            margin-right: 10px;
+          }
+        }
+      }
+      img {
+        height: 32px;
+        vertical-align: middle;
+      }
+      .profile {
+        width: 15%;
+        ul {
+          justify-content: flex-end;
+          li {
+            margin-left: 10px;
+          }
+        }
+      }
+    }
+  }

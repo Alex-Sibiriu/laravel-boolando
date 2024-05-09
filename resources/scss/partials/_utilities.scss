@@ -1,0 +1,12 @@
+.d-flex {
+  display: flex;
+  justify-content: center;
+  align-content: flex-start;
+}
+
+.container {
+  width: 90%;
+  max-width: 1455px;
+  margin: auto;
+  flex-wrap: wrap;
+}
