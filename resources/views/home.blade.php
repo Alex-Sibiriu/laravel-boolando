@@ -27,6 +27,10 @@
 
 @extends('layout.main')
 
+@section('title')
+    Home Page
+@endsection
+
 @section('content')
 
     <div class="container d-flex">

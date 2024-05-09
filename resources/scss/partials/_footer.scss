@@ -14,6 +14,9 @@ footer {
         li {
           font-size: .9rem;
           margin-right: 10px;
+          a:hover {
+            text-decoration: underline;
+          }
         }
       }
       .socials {

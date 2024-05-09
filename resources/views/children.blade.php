@@ -36,6 +36,10 @@
 
 @extends('layout.main')
 
+@section('title')
+    Bambini
+@endsection
+
 @section('content')
 
     <div class="container d-flex">

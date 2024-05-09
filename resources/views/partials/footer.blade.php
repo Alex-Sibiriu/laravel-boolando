@@ -7,9 +7,9 @@
 @endphp
 
 <footer class=" position-absolute w-100 bottom-0 ">
-    <!-- INFO SECTION -->
+    {{-- <!-- INFO SECTION --> --}}
     <div class="container d-flex">
-      <!-- INFO SECTION -->
+      {{-- <!-- INFO SECTION --> --}}
       <div class="info-section">
         <h2>Boolando s.r.l.</h2>
         <ul class="d-flex">
@@ -20,9 +20,9 @@
             @endforeach
         </ul>
       </div>
-      <!-- /INFO SECTION -->
+      {{-- <!-- /INFO SECTION --> --}}
 
-      <!-- SOCIAL -->
+      {{-- <!-- SOCIAL --> --}}
       <div class="socials">
         <h4>Trovaci anche su</h4>
         <ul class="social-icons d-flex">
@@ -35,6 +35,6 @@
             @endforeach
         </ul>
       </div>
-      <!-- /SOCIAL -->
+      {{-- <!-- /SOCIAL --> --}}
     </div>
   </footer>
